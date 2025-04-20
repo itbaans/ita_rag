@@ -9,8 +9,8 @@ file_paths = [f for f in os.listdir("doc2_text") if f.endswith(".txt")]
 file_paths = [os.path.join("doc2_text", f) for f in file_paths]
 docs = load_texts(file_paths)
 
-chunks = get_sementic_embedding_chunks(docs, **sementic_chunking_param)
-#chunks = get_rec_split_chunks(docs, **normal_chunking_param)
+#chunks = get_sementic_embedding_chunks(docs, **sementic_chunking_param)
+chunks = get_rec_split_chunks(docs, **normal_chunking_param)
 
 chunks = chunks
 
